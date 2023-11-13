@@ -8,18 +8,21 @@ body {
     display: none !important;
     }
     .container {
-    position: relative;
+	position: relative;
     left: 15px;
     width: 1095px;
     margin: 0 auto;  /* сайт остаётся по центру при смене масштаба */ 
     
     }
     .header {
-    left: 100px;
+	position: fixed;
     display: flex;
+	top: 0px;
+	width: 1100px;
     align-items: center;
     justify-content: space-between;
-    
+    background-color: #c7d2f2;
+	border: 1px solid black;
     }
     .header__logo {
     font-size: 20px;
@@ -30,8 +33,7 @@ body {
     }
 
     .header__menu {
-        position: relative;
-        left: -100px;
+    position: relative;
     }
     .header__menu .menu__btn {
     background: transparent;
@@ -68,6 +70,10 @@ body {
     from { transform: translateY(90%);}
     }
 
+	.header_img_main {
+	padding: 50px 0 0 0;
+	}
+
     .portfolio__btn {
 	background: #eef7ff;
 	color: #000000;
@@ -91,7 +97,6 @@ body {
     background: #fbe8e2;
     width: 1065;
     border: 1px solid black;
-    position: relative;
     left: -10px;
     
     }
